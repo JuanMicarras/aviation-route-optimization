@@ -28,14 +28,16 @@ Each record represents:
 	•	Destination airport
 	•	Route connection (edge)
 
-The dataset is stored in the data/ directory.
+The dataset file used in this project is:
+
+flights_final.csv
 
 ⸻
 
 How It Works
 	1.	The dataset is loaded and parsed.
 	2.	Airports are modeled as nodes in a graph.
-	3.	Flight routes are modeled as edges connecting nodes.
+	3.	Flight routes are modeled as weighted edges connecting nodes.
 	4.	A shortest path algorithm is applied to determine the optimal route between two selected airports.
 
 The algorithm evaluates connections and computes the most efficient path based on the graph structure.
@@ -64,6 +66,28 @@ O((V + E) log V)
 Where:
 V = number of airports (nodes)
 E = number of flight routes (edges)
+
+⸻
+
+How to Run
+
+Requirements
+	•	Python 3.x
+	•	Jupyter Notebook
+	•	pandas (if used in the notebook)
+
+Install dependencies (if needed):
+
+pip install pandas
+
+Run the Project
+	1.	Open the notebook:
+
+jupyter notebook Laboratorio_2_EDD2.ipynb
+	2.	Execute the cells in order to:
+	•	Load the dataset
+	•	Build the graph structure
+	•	Run the shortest path algorithm
 
 ⸻
 
